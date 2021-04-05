@@ -1,0 +1,371 @@
+/**
+
+Author: Sandeep Nehte
+Email: sandy.nehte@gmail.com
+File: style.css
+=============
+  == Table of Contents==
+	- Custom Css
+	- Generic classes
+		-	Margin, Padding, Font class, text align, position, floating, overflow, background class, text color, display class, boarder class
+	- Theme Elements
+		-	Icons, Accordion, Button, Redial, floating actions, FAB, tabs, typography, buttons, box shadow, slider page, error page, Breadcrumb, pagination, Basic card, Login card
+	- General Elements
+		-	Modal, Nestable, Lable & Badges, List, Portlates, Preloader, Calender, To-Do, Materialize general elements, Lables
+	- Advance Form Elements
+	- Pages
+		-	Loader page, Invoice, Tasklist, Task detail, Range-slider, Counter, Maintenance, Color, FAQ, Progress, Panels & wells, Contact card, Auth pages, Flag, Gallery, Products pages, Widget, Email, Social timeline, Datatable, Chat, Blog, Wizard, CRM dashboard, Task board, Issue list, Chartlist, X-editable, Home chat, Dashboard 1-2-3-4, Responsive media class
+============= */
+
+
+/**  =====================
+      Custom css start
+==========================  **/
+
+body {
+	background-color: #f3f3f3;
+	font-size: 0.875em;
+	overflow-x: hidden;
+	color: #455a64;
+	font-family: "Open Sans", sans-serif;
+	background-attachment: fixed;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.2) 180px, rgba(255, 255, 255, 0.9) 0%);
+}
+
+ul {
+	padding-left: 0;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+a {
+	font-size: 13px;
+	color: #37474f;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 1400px) {
+	a {
+		font-size: 14px;
+	}
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+	color: #448aff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+p {
+	font-size: 13px;
+}
+
+b,
+strong {
+	font-weight: 500;
+}
+
+code {
+	padding: 0px 3px;
+	border-radius: 3px;
+}
+
+.media-left {
+	padding-right: 20px;
+}
+
+
+/**====== Custom css end ======**/
+
+
+/**  =====================
+      Main-body css start
+==========================  **/
+
+.main-body .page-wrapper {
+	padding: 1.8rem;
+	-webkit-transition: all ease-in 0.3s;
+	transition: all ease-in 0.3s;
+}
+
+
+/**====== Main-body css end ======**/
+
+
+/**  =====================
+      Card-Layout css start
+==========================  **/
+
+.login .container-fluid {
+	width: auto;
+	margin-top: 80px;
+}
+
+.filter-bar .navbar .navbar-nav .dropdown-menu {
+	position: absolute;
+}
+
+
+/*====== Ready to use Css Start ======*/
+
+.wrapper {
+	padding: 0;
+}
+
+
+/*====== Ready to use Css End ======*/
+
+.card {
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+	box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+	border: none;
+	margin-bottom: 30px;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.card .card-footer {
+	border-top: none;
+	padding: 15px 20px;
+	border-radius: 0 0 5px 5px;
+}
+
+.card .card-header {
+	background-color: transparent;
+	border-bottom: none;
+	padding: 20px;
+	position: relative;
+	-webkit-box-shadow: 0px 1px 20px 0px rgba(69, 90, 100, 0.08);
+	box-shadow: 0px 1px 20px 0px rgba(69, 90, 100, 0.08);
+}
+
+.card .card-header .card-header-left {
+	display: inline-block;
+}
+
+.card .card-header .card-header-right {
+	right: 10px;
+	top: 13px;
+	display: inline-block;
+	float: right;
+	padding: 7px 0;
+	position: absolute;
+}
+
+@media only screen and (max-width: 575px) {
+	.card .card-header .card-header-right {
+		display: none;
+	}
+}
+
+.card .card-header .card-header-right i {
+	margin: 0 7px;
+	cursor: pointer;
+	font-size: 12px;
+	color: #8c8c8c;
+	line-height: 2;
+}
+
+.card .card-header .card-header-right .card-option {
+	width: 35px;
+	height: 20px;
+	overflow: hidden;
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.card .card-header .card-header-right .card-option li {
+	display: inline-block;
+}
+
+.card .card-header span {
+	display: block;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+.card .card-header h5 {
+	margin-bottom: 0;
+	color: #37474f;
+	font-size: 15px;
+	font-weight: 600;
+	display: inline-block;
+	margin-right: 10px;
+	line-height: 1.4;
+	position: relative;
+}
+
+.card .card-header h5:after {
+	content: "";
+	background-color: #448aff;
+	position: absolute;
+	left: -20px;
+	top: 0;
+	width: 4px;
+	height: 20px;
+}
+
+.card .card-block {
+	padding: 300px;
+	padding-top: 300px;
+    padding-right: 300px;
+    padding-bottom: 300px;
+    padding-left: 300px;
+}
+
+.card .card-block table tr {
+	padding-bottom: 20px;
+}
+
+.card .card-block .sub-title {
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.card .card-block code {
+	background-color: #eee;
+	margin: 5px;
+	display: inline-block;
+}
+
+.card .card-block .dropdown-menu {
+	top: 38px;
+}
+
+.card .card-block p {
+	line-height: 1.4;
+}
+
+.card .card-block a.dropdown-item {
+	margin-bottom: 0;
+	font-size: 14px;
+	-webkit-transition: 0.25s;
+	transition: 0.25s;
+}
+
+.card .card-block a.dropdown-item:active,
+.card .card-block a.dropdown-item .active {
+	background-color: #448aff;
+}
+
+.card .card-block.remove-label i {
+	margin: 0;
+	padding: 0;
+}
+
+.card .card-block.button-list span.badge {
+	margin-left: 5px;
+}
+
+.card .card-block .dropdown-menu {
+	background-color: #fff;
+	padding: 0;
+}
+
+.card .card-block .dropdown-menu .dropdown-divider {
+	background-color: #ddd;
+	margin: 3px 0;
+}
+
+.card .card-block .dropdown-menu>a {
+	padding: 10px 16px;
+	line-height: 1.429;
+}
+
+.card .card-block .dropdown-menu>li>a:focus,
+.card .card-block .dropdown-menu>li>a:hover {
+	background-color: rgba(202, 206, 209, 0.5);
+}
+
+.card .card-block .dropdown-menu>li:first-child>a:first-child {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.card .card-block .badge-box {
+	padding: 10px;
+	margin: 12px 0;
+}
+
+.card .card-block-big {
+	padding: 35px;
+}
+
+.card .card-block-small {
+	padding: 15px;
+}
+
+.card-footer {
+	background: transparent;
+}
+
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(59, 152, 255, 0.3);
+		box-shadow: 0 0 0 0 rgba(59, 152, 255, 0.3)
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 20px rgba(4, 169, 245, 0);
+		box-shadow: 0 0 0 20px rgba(4, 169, 245, 0)
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(4, 169, 245, 0);
+		box-shadow: 0 0 0 0 rgba(4, 169, 245, 0)
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(59, 152, 255, 0.3);
+		box-shadow: 0 0 0 0 rgba(59, 152, 255, 0.3)
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 20px rgba(4, 169, 245, 0);
+		box-shadow: 0 0 0 20px rgba(4, 169, 245, 0)
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(4, 169, 245, 0);
+		box-shadow: 0 0 0 0 rgba(4, 169, 245, 0)
+	}
+}
